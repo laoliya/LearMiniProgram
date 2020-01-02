@@ -1,0 +1,3 @@
+<!--page/home/home.wxml-->
+<text class="title">hello wprd</text>
+<button size="mini">按钮</button>
