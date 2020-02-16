@@ -1,0 +1,11 @@
+<!--page/text/text.wxml-->
+<!-- <text>page/text/text.wxml</text> -->
+<text>helloword\n</text>
+<!-- 是否被选中selectable -->
+<text selectable="true">你好小程序\n</text>
+
+<text space="ensp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+<text space="nbsp">hello world\n</text>
+
+<text decode>5 &gt; 3</text>
