@@ -1,66 +1,52 @@
 // page/home/home.js
+const app = getApp();
+console.log(app.globalData.name);
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  //初始化数据
+  data:{
+    message:'哈哈哈',
+    list:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  //监听点击事件
+  handleGetUserInfo(event){
+    console.log(event)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onLoad(){
+    console.log('onLoad');
+    wx.request({
+      url: 'http://123.207.32.32:8000/recommend',
+      success:(res)=>{
+        this.setData({
+          list: res.data
+        })
+      },
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onShow(){
+    console.log('onShow');
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onReady(){
+    console.log('onReady');
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onHide(){
+    console.log('onHide');
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  onUnload(){
+    console.log('onUnload');
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  //监听wxml点击事件
+  handleViewClick(){
+    console.log('hahah被点击了');
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //----监听其他事件----
+  //监听页面滚动
+  onPageScroll(obj){
+    // console.log(obj);
+  },
+  onReachBottom(){
+    console.log('滑动到底部了');
+  },
+  onPullDownRefresh(){
+    console.log('下拉刷新');  //下拉刷新
   }
 })
