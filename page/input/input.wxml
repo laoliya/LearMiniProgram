@@ -1,0 +1,15 @@
+<!--page/input/input.wxml-->
+<input></input>
+<!-- input的value默认值 -->
+<input value="哈哈哈"></input>
+<!-- 弹出的键盘类型 -->
+<input type="number" ></input>
+<!-- 密码文字输入 -->
+<input password></input>
+<!-- placeholder占位符 -->
+<input placeholder="请输入内容"></input>
+<!-- input的监事件 -->
+<input bindinput="handleinput"
+       bindfocus="handlefocus"
+       bindblur="handleblur"
+></input>

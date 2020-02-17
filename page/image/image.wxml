@@ -1,0 +1,13 @@
+<!--page/image/image.wxml-->
+<!-- <image src="../../assets/images/jsz.jpg"></image> -->
+<!-- <image style="margin-top: -6rpx" src="/assets/images/jsz1.jpg"></image> -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+<!-- 补充：选择相册里面的图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{path}}"></image>
+<!-- 图片懒加载lazy-load -->
+<image lazy-load wx:for="{{10}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="handleLoad"></image>
+
+<!-- show-menu-by-longpress开启长按图片显示识别小程序码菜单 -->
+<image show-menu-by-longpress src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>

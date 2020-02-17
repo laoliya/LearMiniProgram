@@ -1,0 +1,18 @@
+/* page/view/view.wxss */
+.box{
+  background:red;
+}
+.box1{
+  width: 100px;
+  height: 100px;
+  background: purple
+}
+.hover-clsaa {
+  background: orange;
+  font-size: 30px;
+}
+.hover-class-box2 {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
