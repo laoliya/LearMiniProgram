@@ -1,0 +1,27 @@
+<!--page/wxs/wxs.wxml-->
+<!-- 模板定义wxs -->
+<!-- <wxs module="info">
+  var message = "hello world";
+  var name = "codrwhy";
+  var sum = function(num1,num2){
+    return num1+num2;
+  };
+  module.exports = {
+      message: message,
+      name: name,
+      sum: sum
+  }
+</wxs> -->
+<!-- <wxs  /> -->
+<!-- 文件引用wxs -->
+<wxs src="../../wxs/info.wxs"  module="info" />
+<view>{{info.message  }}</view>
+<view>{{info.name  }}</view>
+<view>{{info.message  }}</view>
+<view>{{info.sum(20,30)  }}</view>
+
+<!-- 外部文件引入wxs？ -->
+<!-- <wxs src="../../wxs.format.wxs" module="priceFormat" /> -->
+<wxs src="../../wxs/format.wxs" module="format" />
+<view>{{format.priceFormat(price,3)}}</view>
+<view>{{time}}</view>

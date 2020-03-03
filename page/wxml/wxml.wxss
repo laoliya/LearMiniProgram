@@ -1,0 +1,7 @@
+/* page/wxml/wxml.wxss */
+.box{
+  font-size:64rpx;
+}
+.redColor{
+  color: red;
+}

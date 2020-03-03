@@ -1,0 +1,36 @@
+<!--page/wxml/wxml.wxml-->
+<view>{{noTime}}</view>
+<button bindtap="handleSwitchColor">切换颜色</button>
+<view class=' box {{isActive ? "redColor" : ""}} '>哈哈哈</view>
+<!-- <map class="map" longitude="116.11" latitude="39.6"></map> -->
+<view >----条件判断------</view>
+<button bindtap="handlebutton">if</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+<view wx:if="{{ score > 90  }}">优秀</view>
+<view wx:elif="{{ score > 80  }}">有点秀</view>
+<view wx:elif="{{ score > 60  }}">有点fian 秀</view>
+<view wx:else="{{ score > 60  }}">加油</view>
+<button  bindtap="handlegaifen">改分</button>
+<view hidden="{{true}}">hideeen属性</view>
+<view wx:if="{{false}}">wxif属性</view>
+<view wx:for="{{ ['abc','def','qwe'] }}">{{item}} {{index}}</view>
+<view wx:for="addssss">{{item}} {{index}}</view>
+
+<!-- block标签只起到包裹作用，不进行实际的渲染 -->
+<block wx:if="{{isShow}}">   
+    <button>按钮1</button>
+    <button>按钮1</button>
+    <button>按钮1</button>
+</block>
+<block wx:for="{{5}}">   
+    <button>按钮1</button> 
+    <button>按钮1</button>
+    <button>按钮1</button>
+</block>
+<view wx:for="{{2}}" wx:for-item="shuzi" wx:for-index="zi" wx:key="index">{{shuzi}} {{zi }}</view>
+
+<import src="/template/template.wxml" />
+<import src="/template/abc.wxml" />
+<template is="content" data="{{Buttonname:'登录',Viewcontent:'你好'}}"></template>
+<template is="abc"></template> 
+<view>25.666666</view>

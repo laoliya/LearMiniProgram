@@ -1,0 +1,4 @@
+<include src="./nav.wxml"/>
+<view>
+头部
+</view>
