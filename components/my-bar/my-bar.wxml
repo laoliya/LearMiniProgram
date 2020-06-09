@@ -1,0 +1,6 @@
+<!--components/my-bar/my-bar.wxml-->
+<view class="view1">
+  <view bindtap="handleclick">title1</view>
+  <view>title2</view>
+  <view>title3</view>
+</view>

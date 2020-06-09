@@ -1,3 +1,28 @@
 <!--page/home/home.wxml-->
 <text class="title">hello wprd</text>
 <button size="mini">按钮</button>
+<!-- 使用自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+<!-- 使用自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+<!-- 自定义组件样式部分 -->
+<!-- <my-style></my-style> -->
+<!-- 组件间的通信 -->
+<!-- <my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="嘿嘿嘿" titleclass="green" />
+<my-prop title="呵呵呵"   titleclass="orange"/> -->
+<!-- 自定义组件传递数据 -->
+<!-- <view>当前计数：{{counter}}</view> -->
+<!-- <my-event bind:increment="handleclick"/> -->
+<!-- <my-bar bind:increment="handleclick"/> -->
+<!-- 自定义组件 -->
+<w-tab-control titles="{{['衣服','鞋子','帽子']}}" bind:handleTabClick="handleTabClick"/>
+<!-- 直接选中组件修改数据/调用方法 -->
+<button bindtap="handleIncrementCpn">修改组件内数据</button>
+<my-sel class="se"/>
+<!-- 插槽的使用 -->
+<view>----------------------------</view>
+<my-slot>
+  <view slot="a">1212</view>
+  <view slot="b">12123</view>
+</my-slot>

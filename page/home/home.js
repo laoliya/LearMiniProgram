@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    counter: 0
   },
 
   /**
@@ -62,5 +62,21 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  handleclick(){
+    this.setData({
+      counter:this.data.counter+1
+    })
+  },
+  handleTabClick(event){
+    console.log(event);
+  },
+  handleIncrementCpn(){
+    const my_sel = this.selectComponent('.se')
+    // console.log(my_sel);
+    // my_sel.setData({
+    //   counter:my_sel.data.counter + 20,
+    // })
+    my_sel.incremCounter(10)
+  },
 })
