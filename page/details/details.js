@@ -1,22 +1,18 @@
-// page/home/home.js
+// page/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:'哈哈哈'
+
   },
-  handleclick(){
-    wx.navigateTo({
-      url: '/page/details/details?id=1'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
   },
 
   /**
@@ -44,7 +40,8 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const pages = getCurrentPages();
+    console.log(pages);
   },
 
   /**

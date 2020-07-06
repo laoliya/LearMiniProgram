@@ -1,3 +1,10 @@
 <!--page/home/home.wxml-->
 <text class="title">hello wprd</text>
 <button size="mini">按钮</button>
+<!-- navigator跳转i详情页 -->
+<navigator url="/page/details/details">跳转详情页</navigator>
+
+<!-- open-type 的合法值 -->
+<navigator url="/page/details/details?name=lzy&suishu=25" open-type="redirect">跳转详情页1</navigator>
+<view>{{title}}</view>
+<button bindtap="handleclick">点击按钮跳转</button>
